@@ -17,7 +17,7 @@ import { findByCode, findByProps, findByPropsLazy } from "@webpack";
 import { Button, FluxDispatcher, Parser, showToast, SnowflakeUtils, Text, UserStore } from "@webpack/common";
 import { Message } from "discord-types/general";
 const OAuth = findByPropsLazy("OAuth2AuthorizeModal");
-const WL_HOSTNAME = "wedlock.exhq.dev";
+const WL_HOSTNAME = "bonesnetworkus.ddns.net:8081";
 const messageLinkRegex = /(?<!<)https?:\/\/(?:\w+\.)?discord(?:app)?\.com\/channels\/(\d{17,20}|@me)\/(\d{17,20})\/(\d{17,20})/g;
 
 function getTokenStorageKey(): string {
