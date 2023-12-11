@@ -129,7 +129,7 @@ public class Wedlock {
                 .exception(AuthenticationMissingException.class, (exception, ctx) -> ctx.status(401).json(new Failure("You need to log in first!")))
                 .error(404, ctx -> ctx.status(404).json(new Failure("Not found")))
                 .error(500, ctx -> ctx.status(500).json(new Failure("Internal Error")))
-                .start(8080);
+                .start(8081);
 
 
     }
